@@ -73,7 +73,18 @@
             src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1191,w_2120,x_0,y_57/f_auto,q_auto,w_1100/v1554740850/shape/mentalfloss/64051-istock-685469924.jpg">
 
 
+        <script>
+            const inputs = document.querySelectorAll('.controls input');
 
+            function handleUpdate() {
+                const suffix = this.dataset.sizing || '';
+                document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+            }
+
+            inputs.forEach(input => input.addEventListener('change', handleUpdate));
+            inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+        </script>
 
     </body>
 
