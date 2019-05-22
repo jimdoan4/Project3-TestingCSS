@@ -6,6 +6,50 @@
         <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Noto+Sans+KR|Stylish|Syncopate&display=swap"
             rel="stylesheet">
         <title>Testing with CSS</title>
+        <style>
+            :root {
+                --base: #f5f5f5;
+                --spacing: 0px;
+                --blur: 0px;
+                --opacity: .5;
+            }
+
+            img {
+                padding: var(--spacing);
+                background: var(--base);
+                filter: blur(var(--blur));
+                background: var(--opacity);
+            }
+
+            .hl {
+                color: var(--base);
+            }
+
+
+
+            body {
+                text-align: center;
+                background: #474747;
+                color: rgb(253, 253, 253);
+                font-family: 'Stylish', sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-family: 'Syncopate', sans-serif;
+                font-family: 'Martel Sans', sans-serif;
+                font-weight: 100;
+                font-size: 50px;
+                border-color: 10px 10px black;
+
+            }
+
+            .controls {
+                margin-bottom: 50px;
+            }
+
+            input {
+                width: 100px;
+            }
+
+        </style>
     </head>
 
     <body>
